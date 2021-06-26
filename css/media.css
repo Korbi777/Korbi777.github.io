@@ -1,0 +1,137 @@
+@media (max-width: 1300px){
+    .top-info{
+        max-width: 840px;
+    }
+    
+}
+
+@media (max-width: 1265px){
+    
+    .projects-slider .slick-list{
+    margin: 0;
+}
+
+.projects-slider .slick-slide{
+    margin: 0;
+}
+}
+
+@media (max-width: 1107px){
+    .projects-slider{
+        margin-top: 10px;
+    }
+    .projects-box{
+        max-width: 520px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px){
+    .menu__list{
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #2E4053;
+        z-index: 5;
+    }
+    
+    .menu__list li{
+        margin-left: 0;
+    }
+    
+    .menu__list a{
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #2E4053;
+        background-color: #fff;
+    }
+    .btn__menu{
+    display: block;
+}
+}
+
+@media (min-width: 1000px){
+    .menu__list{
+        display: flex !important;
+    }
+}
+
+@media (max-width: 940px){
+    .top-info{
+        max-width: 700px;
+    }
+    .top{
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .projects{
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    .bot{
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 580px){
+    .projects-box{
+        display: block;
+    }
+    .projects-box__images{
+        width: 100%;
+        min-height: 200px; 
+    }
+    .projects-box__text{
+        width: 100%;
+        padding: 0;
+        min-height: 50px;
+    }
+    .projects-slider{
+        padding-bottom: 30px;
+    }
+    .projects-box img{
+        width: 300px;
+    }
+    .web::after{
+        width: 350px;
+  height: 180px;
+    object-fit: cover;
+    }
+    
+    .game::after{
+        width: 350px;
+  height: 180px;
+        object-fit:cover;
+    }
+    .projects-slider .slick-slide{
+        padding-bottom: -30px;
+    }
+    .body{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 400px){
+
+    .body{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .web::after{
+        width: 320px;
+  height: 160px;
+    object-fit: cover;
+    }
+    
+    .game::after{
+        width: 320px;
+  height: 160px;
+        object-fit:cover;
+    }
+}

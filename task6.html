@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Z6_2</title>
+</head>
+<body>
+<script>
+  let arr4 = new Array(1, 2, 3, 4, 5, 6, 17, 128);
+  let arr2 = new Array(201, 202, 208, 205, 262, 222)
+  let ResultArr = arr4.concat(arr2)
+
+  let t = ResultArr[ResultArr.length - 1]
+  delete ResultArr[ResultArr.length-1]
+  alert(t)
+</script>
+</body>
+</html>

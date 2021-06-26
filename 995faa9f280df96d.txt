@@ -1,0 +1,107 @@
+document.getElementById('btn').onclick = function() {
+
+  let year = prompt('В каком году была опубликована спецификация ECMAScript-2015?', '');
+
+  if (year == 2015) {
+    alert( "Правильно!" );
+    alert( "Вы такой умный!" );
+  } else {
+    alert ("Неверно, подумайте еще!");
+  }
+  alert (typeof year);
+}
+
+document.getElementById('btn1').onclick = function() {
+  let a = prompt('Угадай число от 0 до 5');
+
+  switch (a) {
+    case '0':
+      alert( 'Совсем маловато' );
+      break;
+    case '1':
+      alert( 'Мало, но ты близок к успеху' );
+      break;
+    case '2':
+      alert( 'Совсем тепло' );
+      break;
+    case '3':
+      alert( 'Очень жарко!' );
+      break;
+    case '4':
+      alert( 'В точку!' );
+      break;
+    case '5':
+      alert( 'Перебор!' );
+      break;
+    default:
+      alert( 'Неизвестное значение' );
+  }
+}
+
+document.getElementById('while').onclick = function() {
+  function i() {
+    i = 1;
+    while (i <= 40) {
+      console.log(i);
+      i++;
+    }
+  }
+  i();
+}
+document.getElementById('for').onclick = function() {
+  function f() {
+    for (let f = 1; f <= 40; f++) {
+      console.log(f);
+    }
+  }
+  f();
+}
+document.getElementById('dowhile').onclick = function() {
+  function g() {
+    g = 1;
+    do {
+      console.log(g);
+      g++;
+    } while (g < 41);
+  }
+  g();
+}
+document.getElementById('btn3').onclick = function() {
+  function showAlert() {
+    alert("Привет");
+    setTimeout(showAlert, 0.1);
+  }
+  showAlert();
+}
+document.getElementById('btn4').onclick = function() {
+
+   let num = prompt('Введите число большее 100!', 101);
+
+    while (num <= 100 && num != null) {
+      num = prompt('Введите еще раз!', 101);
+    }
+
+}
+document.getElementById('btn5').onclick = function() {
+  for (let i = 8; i <= 20; i++) {
+    if (i % 2 == 0) {
+      alert( i );
+    }
+  }
+}
+document.getElementById('bt1').onclick = function() {
+  let arr = new Array("Клубника " + "Персик " + "Апельсин " + "Виноград " + "Банан");
+  alert(arr);
+  arr[0] = arr[0] + "!";
+  alert(arr)
+}
+document.getElementById('bt2').onclick = function() {
+let arr1 = ["Картошка " + "Перец " + "Помидор " + "Капуста " + "Баклажан"];
+alert(arr1);
+}
+
+document.getElementById('bt3').onclick = function() {
+  let Vegetables = [" Картошка", " Перец", " Помидор", " Капуста", " Баклажан"];
+  alert(Vegetables);
+  Vegetables[4] = ' Морковь';
+  alert(Vegetables);
